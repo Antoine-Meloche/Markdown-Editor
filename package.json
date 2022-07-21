@@ -1,18 +1,21 @@
 {
   "dependencies": {
     "electron": "^19.0.8",
+    "electron-context-menu": "^3.3.0",
+    "electron-debug": "^3.2.0",
+    "electron-preferences": "^2.7.0",
     "typescript": "^4.7.4"
   },
   "name": "markdown-editor",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "devDependencies": {
     "@types/electron": "^1.6.10",
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "build": "./node_modules/.bin/tsc && prettier index.html > dist/index.html",
-    "test": "./node_modules/.bin/tsc && electron ./dist/app.js && prettier index.html > dist/index.html"
+    "build": "./node_modules/.bin/tsc && prettier src/index.html > dist/index.html && prettier src/preferences.html > dist/preferences.html",
+    "start": "npm run build && electron ./dist/index.js"
   },
   "repository": {
     "type": "git",

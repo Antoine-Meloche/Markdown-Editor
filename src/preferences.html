@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <style>
+        .settings-panel {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            background-color: #fafafa;
+        }
+
+        .settings-panel__section-list {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+            background-color: #fafafa;
+            overflow-y: scroll;
+        }
+
+        .settings-panel__section-list__item {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+        }
+
+        .settings-panel__section-list__item:hover {
+            background-color: #e0e0e0;
+        }
+
+        .settings-panel__options {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: #fafafa;
+            justify-content: center;
+        }
+
+        .settings-panel__options__item {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+        }
+
+        .settings-panel__options__item:hover {
+            background-color: #e0e0e0;
+        }
+
+        .settings-panel__options__item__label {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="settings-panel">
+        <div class="settings-panel__section-list">
+            <div class="settings-panel__section-list__item">General</div>
+            <div class="settings-panel__section-list__item">Theme</div>
+            <div class="settings-panel__section-list__item">Shortcuts</div>
+        </div>
+        <div class="settings-panel__options">
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show line numbers</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show whitespace</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show invisibles</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show indent guides</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show gutter</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show invisibles</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-panel__options__item">
+                <div class="settings-panel__options__item__label">
+                    <label>
+                        <input type="checkbox" name="">
+                        <span>Show indent guides</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

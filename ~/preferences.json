@@ -1,0 +1,15 @@
+{
+    "general": {
+        "theme": "light"
+    },
+    "editor": {
+        "fontSize": 16,
+        "fontFamily": "sans-serif",
+        "lineHeight": 1.5,
+        "tabSize": 2,
+        "showLineNumbers": true
+    },
+    "theme": {
+        "theme": "light"
+    }
+}
