@@ -11,10 +11,11 @@
   "main": "dist/index.js",
   "devDependencies": {
     "@types/electron": "^1.6.10",
+    "prettier": "2.7.1",
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "build": "./node_modules/.bin/tsc && prettier src/index.html > dist/index.html && prettier src/preferences.html > dist/preferences.html",
+    "build": "./node_modules/.bin/tsc && npx prettier --write dist/",
     "start": "npm run build && electron ./dist/index.js"
   },
   "repository": {
